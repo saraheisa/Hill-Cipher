@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url('fonts/ChakraPetch-Light.woff2') format('woff2'),
+        url('fonts/ChakraPetch-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url('fonts/ChakraPetch-Regular.woff2') format('woff2'),
+        url('fonts/ChakraPetch-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url('fonts/ChakraPetch-Medium.woff2') format('woff2'),
+        url('fonts/ChakraPetch-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url('fonts/ChakraPetch-SemiBold.woff2') format('woff2'),
+        url('fonts/ChakraPetch-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: white;
+    font-family: 'Chakra Petch';
+}
+
+.hide{
+    display: none !important;
+}
+
+body {
+    /* background-image: url(hacker-back-slow.gif); */
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-color: #000000;
+}
+
+.container {
+    background-image: url(network-lines.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    min-width: 300px;
+    background-color: rgba(33, 33, 33, 0.404);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    line-height: 1.2;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.txtDiv {
+    display: flex;
+    flex-direction: row;
+    background: rgba(0, 0, 0, 0);
+    width: 100%;
+}
+
+#alphaTxt {
+    width: 65%;
+    margin: 0%;
+    background-color: rgba(33, 33, 33, 0.384);
+    color: white;
+    font-size: 20px;
+    border: #02ff02 solid 2px;
+    padding: 10px;
+}
+
+.btnsDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 50px;
+    width: 35%;
+}
+
+.btnsDiv button {
+    width: 80%;
+    height: 50px;
+    background-color: rgba(33, 33, 33, 0.418);
+    border-color: rgba(0, 0, 0, 0.521);
+    font-size: 20px;
+    color: #02ff02;
+}
+
+.info{
+    font-size: 22px;
+}
+
+.info span{
+    background-color: rgba(33, 33, 33, 0.418);
+    border-color: rgba(0, 0, 0, 0.521);
+    font-size: 22px;
+    padding: 10px;
+}
+
+.container button{
+    background-color: #00000000;
+    border: rgb(0, 153, 0) solid 2px;
+    width: 50%;
+    height: 60px;
+    margin: auto;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.matrixDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: ". . ." ". . .";
+    margin: auto;
+}
+
+.matrixDiv input{
+    margin: 20px;
+    height: 80px;
+    width: 80px;
+    font-size: 30px;
+    text-align: center;
+    color: #000000
+}
+
+.matrixDiv input:focus{
+    background-color: rgb(0, 166, 81);
+}
+
+.tabsDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    opacity: 1;
+}
+
+.tabsDiv img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.container:nth-child(3) textarea{
+    border-radius: 2em;
+    background: transparent;
+    border: #02ff02 solid 2px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.container:nth-child(3) button{
+    margin-right: 0%;
+    width: 30%;
+}

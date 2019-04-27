@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html style="width: 100%; height: 100%;">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>hill cipher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" media="screen" href="style.css" />
+    <link rel="stylesheet" media="screen" href="alert.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">consist your alphabetics</h1>
+        <!-- <p class="note">take a space between each character even if it is a space <br/>*order matters*</p> -->
+        <div class="txtDiv">
+            <textarea name="alphabetics" id="alphaTxt" rows="20"></textarea>
+            <div class="btnsDiv">
+                <button>a...z</button>
+                <button>A...Z</button>
+                <button>0...9</button>
+            </div>
+        </div>
+        <p class="info">Number of characters <span id="numCharTxt"></span></p>
+        <button id="okayBtn">okay!</button>
+    </div>
+
+    <div class="container hide">
+        <h1 class="title">Enter your key</h1>
+        <div class="matrixDiv">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+        </div>
+        <button id="goBtn">GO!</button>
+    </div>
+
+    <div class="container hide">
+        <div class="tabsDiv">
+            <img src="lock.png" alt="encryption icon" width="100" height="80">
+            <img src="unlock.png" alt="decryption icon" width="100" height="80">
+        </div>
+        <h2 id="title1">Enter Plain Text</h3>
+        <textarea cols="30" rows="7" id="txt1"></textarea>
+        <button id="actionBtn">encrypt</button>
+        <h2 id="title2">Cipher Text</h3>
+        <textarea cols="30" rows="7" id="txt2" disabled></textarea>
+    </div>
+
+    <div class="hide" id="alertContainer">
+        <div class="position-absolute" id="alert">
+            <span>
+                <!-- correct: class="fas fa-check text-success" warning: class="fas fa-times text-danger" -->
+                <i class="fas" id="alertIcon"></i>
+            </span>
+            <span id="alertMessage"></span>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
