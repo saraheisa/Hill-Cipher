@@ -2,7 +2,7 @@
 Encryption and Decryption for Hill Cipher 3*3
 
 ## Demo
-https://github.com/saraheisa/Hill-Cipher
+https://saraheisa.github.io/Hill-Cipher/
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
